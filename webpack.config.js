@@ -4,7 +4,7 @@ const distDir = path.resolve(__dirname, 'dist')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    entry: './entry.js',
+    entry: './index.js',
     output: {
         filename: 'bundle.js',
         path: distDir,
@@ -12,6 +12,9 @@ module.exports = {
     devServer: {
         contentBase: distDir,
         port: 8080,
+        proxy: {
+            '/api': 'https://api.punkapi.com/v2/'
+        }
     },
     module: {
         rules: [{
