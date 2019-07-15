@@ -15,7 +15,7 @@ const beerTaglineElement = document.body.querySelector('.botd-tagline')
 const beerDescriptionElement = document.body.querySelector('.botd-description')
 
 const getBeers = async () => {
-    const apiResponse = await fetch('https://api.punkapi.com/v2/beers/')
+    const apiResponse = await fetch('https://api.punkapi.com/v2/beers?per_page=80')
         .then(res => {
             return res.json()
         })
