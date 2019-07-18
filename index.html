@@ -4,32 +4,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Tap That</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
 </head>
 
 <body>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
-        <h1 class="navbar-brand">TAP THAT</h1>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="#">About</a>
-            </div>
-        </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark justify-content-center">
+        <div class="navbar-brand d-flex w-50 mr-auto py-2">TAP THAT</div>
     </nav>
 
-    <div class="container">
-        <h3 class="h3-custom">Beer of the Day</h3>
+    <!--CONTENT-->
+    <div class="container text-center">
+        <h3 class="h3-custom text-uppercase font-weight-bold"><i class="fa fa-beer"></i> Beer of the Day <i class="fa fa-beer"></i></h3>
         <h1 class="botd-name botd-name-custom"></h1>
         <p class="botd-tagline botd-tagline-custom"></p>
         <p class="botd-description botd-description-custom"></p>
     </div>
 
+    <!--FOOTER-->
+    <footer id="sticky-footer" class="py-2 bg-dark fixed-bottom">
+        <div class="container text-center text-white">
+            Annika Kaiser &copy; 2019</small>
+        </div>
+        <div class="text-center">
+            <a class="text-light icon-custom" href="https://github.com/annjkai" target="_blank"><i class="fa fa-github"></i></a>
+            <a class="text-light icon-custom" href="https://www.linkedin.com/in/annikakaiser/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="text-light icon-custom" href="http://annikaiser.com" target="_blank"><i class="fa fa-heart"></i></a>
+        </div>
+    </footer>
 
     <script src="./bundle.js"></script>
-</body>
 
+</body>
 </html>
